@@ -1,7 +1,7 @@
 ### Isi data produk awal (opsional, pengganti input manual di dashboard)
 ### Langsung ke product-service (port 8091), login sebagai superuser.
 
-@pbUrl = http://localhost:8091
+@pbUrl = http://192.168.137.30:8091
 @suToken = {{su.response.body.$.token}}
 
 ### 0. Login superuser
