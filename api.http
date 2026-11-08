@@ -2,7 +2,7 @@
 ### Klik "Send Request" di atas setiap request, berurutan 1-9.
 
 # Ganti sesuai server: localhost / IP server / URL Cloudflare
-@baseUrl = http://localhost:8080/api
+@baseUrl = http://192.168.137.30:8080/api
 # Nilai di bawah diambil otomatis dari hasil request sebelumnya
 @productId = {{list.response.body.$.items[0].id}}
 @token = {{login.response.body.$.token}}
@@ -26,8 +26,8 @@ POST {{baseUrl}}/auth/records
 Content-Type: application/json
 
 {
-  "name": "Budi",
-  "email": "budi@itb.ac.id",
+  "name": "Jacko",
+  "email": "jacko@itb.ac.id",
   "password": "rahasia123",
   "passwordConfirm": "rahasia123"
 }
@@ -38,7 +38,7 @@ POST {{baseUrl}}/auth/auth-with-password
 Content-Type: application/json
 
 {
-  "identity": "budi@itb.ac.id",
+  "identity": "jacko@itb.ac.id",
   "password": "rahasia123"
 }
 
